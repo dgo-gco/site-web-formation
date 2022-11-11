@@ -109,36 +109,24 @@ li > a:hover {
     flex: 1;
 }
 
-.m-d-p > button,
-.convertisseur > button, 
-.scoreboard > button {
+.app-btn {
     background: none;
     border: 1px solid #C3D0B7;
     border-radius: 5px;
-    width: 100px;
+    width: 110px;
     padding: 10px 15px;
+    text-decoration: none;
+    color: #C3D0B7;
+    text-align: center;
 }
 
-.m-d-p > button:hover ,
-.convertisseur > button:hover , 
-.scoreboard > button:hover {
+.app-btn:hover {
     cursor: pointer;
     background-color: #C3D0B7;
-}
-
-button > a {
-    color: #C3D0B7;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-}
-
-button > a:hover {
     color: #342B2B;
 }
 
 #github {
-    
     background-color: #C3D0B7;
     height: 400px;
 }
@@ -153,6 +141,8 @@ button > a:hover {
 
 .git-container {
     display: flex;
+    flex-direction: column;
+    gap: 20px;
     justify-content: center;
     align-items: center;
     height: 250px;
@@ -163,12 +153,33 @@ button > a:hover {
     cursor: pointer;
 }
 
+.git-btn {
+    border: 1px solid #342B2B;
+    border-radius: 5px;
+    width: 210px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #342B2B;
+    text-align: center;
+    transition: all .5s ease;
+}
+
+.git-btn:hover {
+    background-color: #342B2B;
+    color: #C3D0B7;
+}
+
 footer {
     height: 200px;
+    background-color: #342B2B;
+}
+
+.coor {
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: #342B2B;
+    color: #C3D0B7;
+    padding-bottom: 40px;
+    padding-top: 20px;
 }
 
 .details {
