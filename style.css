@@ -1,0 +1,335 @@
+* {
+    padding: 0pc;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.links {
+    background-color: #342B2B;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+
+ul {
+    height: 50px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+li > a {
+    text-decoration: none;
+    color: white;  
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    transition: all .25s;
+}
+
+li > a:hover {
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    letter-spacing: 2px;
+}
+
+.bars-menu {
+    filter: invert();
+    display: none;
+}
+
+.container {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/img/pexels-antonio-batinic-redimensioned-blur.jpg);
+}
+
+.txt-cont {
+    color: white;
+    z-index: 1;
+    padding-left: 20px;
+    margin: 20px;
+}
+
+.web {
+    color: #C3D0B7;
+}
+
+#applications {
+    height: 500px;
+    background-color: #342B2B;
+}
+
+.app-title {
+    display: flex;
+    justify-content: center;
+    color: #C3D0B7;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.container-apps {
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.app {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px black;
+}
+
+.app:hover {
+    opacity: 80%;
+}
+ 
+.conv {
+    height: 177px;
+}
+
+.m-d-p, .convertisseur, .scoreboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+}
+
+.m-d-p > button,
+.convertisseur > button, 
+.scoreboard > button {
+    background: none;
+    border: 1px solid #C3D0B7;
+    border-radius: 5px;
+    width: 100px;
+    padding: 10px 15px;
+}
+
+.m-d-p > button:hover ,
+.convertisseur > button:hover , 
+.scoreboard > button:hover {
+    cursor: pointer;
+    background-color: #C3D0B7;
+}
+
+button > a {
+    color: #C3D0B7;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+button > a:hover {
+    color: #342B2B;
+}
+
+#github {
+    
+    background-color: #C3D0B7;
+    height: 400px;
+}
+
+.git-title {
+    display: flex;
+    justify-content: center;
+    color: #342B2B;
+    font-size: 24px;
+    padding: 20px;
+}
+
+.git-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+.git-logo:hover {
+    filter: invert(16%) sepia(7%) saturate(1099%) hue-rotate(314deg) brightness(88%) contrast(91%);
+    cursor: pointer;
+}
+
+footer {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #342B2B;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: #C3D0B7;
+}
+
+.phn, .mailto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #C3D0B7;
+}
+
+.mail, .phone {
+    width: 20px;
+    height: auto;
+    filter: invert(86%) sepia(19%) saturate(207%) hue-rotate(48deg) brightness(94%) contrast(87%);
+}
+
+.img-mail {
+    text-decoration: none;
+    color: #C3D0B7;
+}
+
+@media screen and (max-width: 376px) {
+
+    nav > ul {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        font-size: 24px;
+        justify-content: center; 
+        gap: 30px;
+        background-color: #C3D0B7;
+        margin-top: -800px;
+        transition: all 0.5s ease;
+        margin-right: 0px;
+        z-index: 1;
+    }
+
+
+    .links {
+    background-color: #342B2B;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+
+    .mobile-menu {
+        margin-top: 420px;
+        border-bottom-right-radius: 10%;
+        border-bottom-left-radius: 10%;
+    }
+
+    .bars-menu {
+        position: absolute;
+        right: 20px;
+        display: block;
+        z-index: 2;
+    }
+
+    .container {
+        background-image: url(/img/pexels-antonio-batinic-redimensioned.jpg);
+        background-position: center;
+    }
+
+    .txt-cont {
+        text-align: center;
+        font-size: 18px;
+        z-index: 0;
+    }
+
+    #applications {
+        height: 850px;
+    }
+
+    .container-apps {
+        padding-top: 20px;
+        display: grid;
+        grid-template: repeat(3, 1fr) / repeat(1, 100%);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 15px;
+    }
+}
+
+@media only screen and (max-width: 501px){
+
+    nav > ul {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        font-size: 24px;
+        justify-content: center; 
+        gap: 30px;
+        background-color: #C3D0B7;
+        margin-top: -800px;
+        transition: all 0.5s ease;
+        margin-right: 0px;
+        z-index: 1;
+    }
+
+
+    .links {
+    background-color: #342B2B;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+
+    .mobile-menu {
+        margin-top: 420px;
+        border-bottom-right-radius: 10%;
+        border-bottom-left-radius: 10%;
+    }
+
+    .bars-menu {
+        position: absolute;
+        right: 20px;
+        display: block;
+        z-index: 2;
+    }
+
+    .container {
+        background-image: url(/img/pexels-antonio-batinic-redimensioned-blur.jpg);
+        background-position: center;
+    }
+
+    .txt-cont {
+        text-align: center;
+        font-size: 18px;
+        z-index: 0;
+    }
+
+    #applications {
+        height: 850px;
+    }
+
+    .container-apps {
+        padding-top: 20px;
+        display: grid;
+        grid-template: repeat(3, 1fr) / repeat(1, 100%);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 15px;
+    }
+}
